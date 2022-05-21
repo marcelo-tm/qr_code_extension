@@ -1,16 +1,25 @@
-# qr_code_generator
+# Flutter QR Code generator chrome extension
 
-A new Flutter project.
+To build the extension run the following command:
 
-## Getting Started
+`flutter build web --web-renderer html --csp`
 
-This project is a starting point for a Flutter application.
+You will find the generated files inside `build/web` folder present in your root Flutter project directory.
 
-A few resources to get you started if this is your first Flutter project:
+To install and use this extension, go to this URL from the Chrome browser:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+`chrome://extensions`
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+To install the extension:
+
+- Enable the **Developer mode** toggle present in the top-right corner of the webpage.
+
+<img src="./static/step1.png" alt="Step 1" width="400"/>
+
+- Click **Load unpacked**.
+
+<img src="./static/step2.png" alt="Step 2" width="400"/>
+
+- Select the `<flutter_project_dir>/build/web` folder.
+
+<img src="./static/step3.png" alt="Step 3" width="400"/>
